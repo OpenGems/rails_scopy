@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     rails_scopy (0.1.0)
-      activerecord (>= 4.2, < 7)
+      activerecord (>= 5.2, < 7)
 
 GEM
   remote: https://rubygems.org/

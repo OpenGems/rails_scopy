@@ -27,7 +27,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Include ```RailsScopy``` in each models
+
+```ruby
+class User < ApplicationRecord
+  include RailsScopy
+end
+```
+
+or in the parent model
+
+```ruby
+class ApplicationRecord < ActiveRecord::Base
+  include RailsScopy
+end
+```
 
 ## Contributing
 

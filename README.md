@@ -1,8 +1,13 @@
 # RailsScopy
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rails_scopy`. To experiment with that code, run `bin/console` for an interactive prompt.
+[![Gem Version](https://badge.fury.io/rb/rails_scopy.svg)](https://badge.fury.io/rb/rails_scopy)
+[![Maintainability](https://api.codeclimate.com/v1/badges/79cdc15c16da15562c25/maintainability)](https://codeclimate.com/github/OpenGems/rails_scopy/maintainability)
+[![Build Status](https://travis-ci.org/OpenGems/rails_scopy.svg?branch=master)](https://travis-ci.org/OpenGems/rails_scopy)
+[![security](https://hakiri.io/github/OpenGems/rails_scopy/master.svg)](https://hakiri.io/github/OpenGems/rails_scopy/master)
+![Gem](https://img.shields.io/gem/dt/rails_scopy)
+[![Coverage Status](https://coveralls.io/repos/github/OpenGems/rails_scopy/badge.svg?branch=master)](https://coveralls.io/github/OpenGems/rails_scopy?branch=master)
 
-TODO: Delete this and the text above, and describe your gem
+Generate automatically scopes in your model (PostgreSQL, SQLite, MySQL, etc...)
 
 ## Installation
 
@@ -24,15 +29,9 @@ Or install it yourself as:
 
 TODO: Write usage instructions here
 
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/rails_scopy.
+Bug reports and pull requests are welcome on GitHub at https://github.com/OpenGems/rails_scopy. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
 
 ## License
 

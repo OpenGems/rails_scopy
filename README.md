@@ -61,11 +61,25 @@ end
 | json | `not_#{column}_has_not_key(value)` | key doesn't present in json |
 | boolean | `#{column}` | true |
 | boolean | `not_#{column}` | false |
-| datetime, time, date | `#{column}_to(value)` | to <= |
-| datetime, time, date | `#{column}_from(value)` | from >= |
-| datetime, time, date | `#{column}_after(value)` | after > |
-| datetime, time, date | `#{column}_before(value)` | before < |
-| datetime, time, date | `#{column}_between(value)` | from...to |
+| date, datetime, time | `#{column}_to(value)` | <= to  |
+| date, datetime, time | `#{column}_from(value)` | from >= |
+| date, datetime, time | `#{column}_after(value)` | after > |
+| date, datetime, time | `#{column}_before(value)` | < before |
+| date, datetime, time | `#{column}_between(value)` | from >= <= to |
+| string, text | `#{column}_contains(value)` | contains |
+| string, text | `#{column}_not_contains(value)` | doesn't contains |
+| string, text | `#{column}_starts_with(value)` | start with |
+| string, text | `#{column}_not_starts_with(value)` | doesn't start with |
+| string, text | `#{column}_ends_with(value)` | end with |
+| string, text | `#{column}_not_ends_with(value)` | doesn't end with |
+| string, text | `#{column}_length(value)` | length eql |
+| string, text | `#{column}_between_length(value)` | from >= <= to (length) |
+| integer, float | `#{column}_to(value)` | <= to  |
+| integer, float | `#{column}_from(value)` | from >= |
+| integer, float | `#{column}_above(value)` | above > |
+| integer, float | `#{column}_below(value)` | < below |
+| integer, float | `#{column}_between(value)` | from >= <= to |
+| float | `#{column}_scale(value)` | scale eql (Number of decimal digits) |
 
 ## Contributing
 

@@ -43,6 +43,30 @@ class ApplicationRecord < ActiveRecord::Base
 end
 ```
 
+### Scopes available
+
+| SQL type | Scope method | Description |
+| ------------- | ------------- | ------------- |
+| All | `#{column}_eq(value)` | equal |
+| All | `#{column}_not_eq(value)` | not equal |
+| All | `#{column}_null` | is null |
+| All | `#{column}_not_null` | is not null |
+| All | `#{column}_present` | not null and not empty |
+| All | `#{column}_blank` | null or empty |
+| All | `ascend_by_#{column}` | ascending order |
+| All | `descend_by_#{column}` | descending order |
+| boolean | `#{column}` | true |
+| boolean | `not_#{column}` | false |
+| json | `#{column}_has_key(value)` | key present in json  |
+| json | `not_#{column}_has_not_key(value)` | key doesn't present in json |
+| boolean | `#{column}` | true |
+| boolean | `not_#{column}` | false |
+| datetime, time, date | `#{column}_to(value)` | to <= |
+| datetime, time, date | `#{column}_from(value)` | from >= |
+| datetime, time, date | `#{column}_after(value)` | after > |
+| datetime, time, date | `#{column}_before(value)` | before < |
+| datetime, time, date | `#{column}_between(value)` | from...to |
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/OpenGems/rails_scopy. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.

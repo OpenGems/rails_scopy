@@ -43,6 +43,15 @@ class ApplicationRecord < ActiveRecord::Base
 end
 ```
 
+and
+
+```ruby
+User.not_admin
+
+User.first_name_contains('Test')
+```
+
+
 ### Scopes available
 
 | SQL type | Scope method | Description |
